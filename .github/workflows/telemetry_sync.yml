@@ -1,0 +1,55 @@
+name: Automated Race Corner Telemetry Pipeline
+
+on:
+  # 1. Runs every Sunday at 18:00 UTC automatically
+  schedule:
+    - cron: '0 18 * * 0'
+
+  # 2. Can be triggered by backend via webhook
+  repository_dispatch:
+    types: [race_completed]
+
+  # 3. Manual 1-Click trigger from GitHub UI anytime
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season Year (e.g. 2024 or 2026)'
+        default: '2024'
+        required: true
+      round:
+        description: 'Round Number (e.g. 1 or 2)'
+        default: '2'
+        required: true
+
+jobs:
+  extract-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Gives the action permission to commit files back
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Corner Telemetry Extractor
+        run: |
+          python scripts/extract_corners.py --season "${{ github.event.inputs.season || '2026' }}" --round "${{ github.event.inputs.round || 'latest' }}"
+
+      - name: Commit and Push Telemetry JSON
+        run: |
+          git config --global user.name "PredictF1 Telemetry Bot"
+          git config --global user.email "bot@predictf1.com"
+          git add telemetry/
+          git diff-index --quiet HEAD || git commit -m "Auto: Update corner telemetry for Season ${{ github.event.inputs.season || '2026' }} Round ${{ github.event.inputs.round || 'latest' }}"
+          git push origin main
