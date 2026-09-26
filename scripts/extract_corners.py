@@ -1,17 +1,27 @@
 import os
 import sys
 import json
+import time
 import argparse
 import urllib.request
 import urllib.error
 
-def fetch_json(url: str):
+def fetch_json(url: str, retries: int = 4):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (PredictF1/1.0)"})
-    try:
-        with urllib.request.urlopen(req, timeout=20) as response:
-            return json.loads(response.read().decode('utf-8'))
-    except Exception as e:
-        return None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as response:
+                return json.loads(response.read().decode('utf-8'))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait_time = 2.5 * (attempt + 1)
+                print(f"⏳ OpenF1 Rate limit (429). Pausing {wait_time}s before retry...")
+                time.sleep(wait_time)
+            else:
+                return None
+        except Exception:
+            time.sleep(1.0)
+    return None
 
 def extract_single_round(season: int, round_num: int, meeting: dict, session_name_filter: str = "Race", force: bool = False):
     meeting_key = meeting["meeting_key"]
@@ -21,13 +31,13 @@ def extract_single_round(season: int, round_num: int, meeting: dict, session_nam
     out_dir = os.path.join("telemetry", str(season), f"{round_num:02d}")
     out_path = os.path.join(out_dir, "corners.json")
 
-    # ⚡ SMART CHECK: If file already exists and is valid, SKIP IT!
+    # ⚡ SMART CHECK: If already extracted, skip immediately
     if os.path.exists(out_path) and os.path.getsize(out_path) > 500 and not force:
         print(f"⏩ Skipping {season} Round {round_num:02d} ({event_name}): Already extracted!")
         return True
 
     print(f"\n=======================================================")
-    print(f"🏁 Processing Missing: {season} Round {round_num:02d} ({event_name})")
+    print(f"🏁 Processing: {season} Round {round_num:02d} ({event_name})")
     print(f"=======================================================")
 
     # 1. Fetch Circuit Corners
@@ -64,11 +74,12 @@ def extract_single_round(season: int, round_num: int, meeting: dict, session_nam
         "drivers": {}
     }
 
-    # Extract fastest lap & corner metrics for top drivers
-    for d in drivers_data[:10]: # Top 10 drivers
+    # Extract fastest lap & corner metrics for top 6 drivers
+    for d in drivers_data[:6]:
         d_num = d.get("driver_number")
         code = d.get("name_acronym") or str(d_num)
         
+        time.sleep(0.3) # ⚡ Safe delay to respect API rate limits
         laps = fetch_json(f"https://api.openf1.org/v1/laps?session_key={session_key}&driver_number={d_num}")
         if not laps:
             continue
@@ -80,6 +91,7 @@ def extract_single_round(season: int, round_num: int, meeting: dict, session_nam
         fastest = min(valid_laps, key=lambda x: x["lap_duration"])
         start_time = fastest.get("date_start")
         
+        time.sleep(0.3) # ⚡ Safe delay
         car_url = f"https://api.openf1.org/v1/car_data?session_key={session_key}&driver_number={d_num}&date>={start_time}"
         car_points = fetch_json(car_url)
         if not car_points:
