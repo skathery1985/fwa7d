@@ -16,8 +16,15 @@ def extract_session_corners(season: int, round_num: int, session_type: str = 'R'
     try:
         session = fastf1.get_session(season, round_num, session_type)
         session.load(laps=True, telemetry=True, weather=False, messages=False)
+        
+        # Check if session data actually loaded (not a future race)
+        if not hasattr(session, 'session_info') or not session.session_info:
+            print(f"ℹ No telemetry data available for {season} Round {round_num} (race has not taken place yet).")
+            return None
+            
+        circuit_info = session.get_circuit_info()
     except Exception as e:
-        print(f"Error loading session: {e}")
+        print(f"ℹ Session data not available yet for {season} Round {round_num}: {e}")
         return None
 
     circuit_info = session.get_circuit_info()
