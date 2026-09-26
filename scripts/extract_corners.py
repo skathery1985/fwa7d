@@ -11,73 +11,64 @@ def fetch_json(url: str):
         with urllib.request.urlopen(req, timeout=20) as response:
             return json.loads(response.read().decode('utf-8'))
     except Exception as e:
-        print(f"Error fetching {url}: {e}")
         return None
 
-def extract_session_corners(season: int, round_num: int):
-    print(f"Fetching {season} Round {round_num} from OpenF1 API...")
-    
-    # 1. Find Meeting Key
-    meetings = fetch_json(f"https://api.openf1.org/v1/meetings?year={season}")
-    if not meetings:
-        print("Failed to fetch season calendar.")
-        return None
-
-    # Filter meetings (skip pre-season testing)
-    gp_meetings = [m for m in meetings if "testing" not in m.get("meeting_name", "").lower()]
-    gp_meetings.sort(key=lambda x: x.get("date_start", ""))
-
-    if round_num > len(gp_meetings):
-        print(f"Round {round_num} does not exist in {season} calendar.")
-        return None
-
-    meeting = gp_meetings[round_num - 1]
+def extract_single_round(season: int, round_num: int, meeting: dict, session_name_filter: str = "Race", force: bool = False):
     meeting_key = meeting["meeting_key"]
     circuit_key = meeting.get("circuit_key")
     event_name = meeting.get("meeting_name", f"Round {round_num}")
-    print(f"✓ Found Event: {event_name} (Meeting Key: {meeting_key})")
+    
+    out_dir = os.path.join("telemetry", str(season), f"{round_num:02d}")
+    out_path = os.path.join(out_dir, "corners.json")
 
-    # 2. Fetch Circuit Corners from MultiViewer
+    # ⚡ SMART CHECK: If file already exists and is valid, SKIP IT!
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 500 and not force:
+        print(f"⏩ Skipping {season} Round {round_num:02d} ({event_name}): Already extracted!")
+        return True
+
+    print(f"\n=======================================================")
+    print(f"🏁 Processing Missing: {season} Round {round_num:02d} ({event_name})")
+    print(f"=======================================================")
+
+    # 1. Fetch Circuit Corners
     corners_url = meeting.get("circuit_info_url") or f"https://api.multiviewer.app/api/v1/circuits/{circuit_key}/{season}"
     circuit_data = fetch_json(corners_url)
     corners = circuit_data.get("corners", []) if circuit_data else []
-    print(f"✓ Circuit has {len(corners)} corners")
 
-    # 3. Find Race Session Key
+    # 2. Find Requested Session
     sessions = fetch_json(f"https://api.openf1.org/v1/sessions?meeting_key={meeting_key}")
     if not sessions:
-        print("No sessions found for this meeting.")
-        return None
+        print(f"⏭ Skipping: No sessions found yet for {event_name}")
+        return False
 
-    race_sess = next((s for s in sessions if s.get("session_type", "").lower() == "race" or "race" in s.get("session_name", "").lower()), None)
-    if not race_sess:
-        print("Race session not found yet.")
-        return None
+    target_sess = next((s for s in sessions if session_name_filter.lower() in s.get("session_name", "").lower()), None)
+    if not target_sess:
+        print(f"⏭ Skipping: Session '{session_name_filter}' not found or not run yet.")
+        return False
 
-    session_key = race_sess["session_key"]
-    print(f"✓ Found Race Session: {session_key}")
+    session_key = target_sess["session_key"]
+    print(f"✓ Found Session: {target_sess.get('session_name')} (Key: {session_key})")
 
-    # 4. Fetch Drivers
+    # 3. Fetch Drivers
     drivers_data = fetch_json(f"https://api.openf1.org/v1/drivers?session_key={session_key}")
     if not drivers_data:
-        print("No driver data available.")
-        return None
+        print(f"⏭ Skipping: No driver data yet.")
+        return False
 
     results = {
         "season": season,
         "round": round_num,
         "event_name": event_name,
-        "session": "Race",
+        "session": target_sess.get("session_name"),
         "total_corners": len(corners),
         "drivers": {}
     }
 
     # Extract fastest lap & corner metrics for top drivers
-    for d in drivers_data[:10]: # Top drivers for lightweight payload
+    for d in drivers_data[:10]: # Top 10 drivers
         d_num = d.get("driver_number")
         code = d.get("name_acronym") or str(d_num)
         
-        # Get driver laps
         laps = fetch_json(f"https://api.openf1.org/v1/laps?session_key={session_key}&driver_number={d_num}")
         if not laps:
             continue
@@ -89,17 +80,14 @@ def extract_session_corners(season: int, round_num: int):
         fastest = min(valid_laps, key=lambda x: x["lap_duration"])
         start_time = fastest.get("date_start")
         
-        # Fetch car telemetry for this lap
         car_url = f"https://api.openf1.org/v1/car_data?session_key={session_key}&driver_number={d_num}&date>={start_time}"
         car_points = fetch_json(car_url)
         if not car_points:
             continue
 
-        # Slice ~100 points along the lap
         lap_duration = fastest["lap_duration"]
-        lap_points = car_points[:min(len(car_points), int(lap_duration * 4))] # 4Hz
+        lap_points = car_points[:min(len(car_points), int(lap_duration * 4))]
 
-        # Map corners
         driver_corners = []
         step = max(1, len(lap_points) // max(1, len(corners)))
         for idx, c in enumerate(corners):
@@ -121,25 +109,53 @@ def extract_session_corners(season: int, round_num: int):
             "lap_time": fastest.get("lap_duration"),
             "corners": driver_corners
         }
-        print(f"✓ Processed {code} (Lap {fastest.get('lap_number')})")
+        print(f"  ✓ {code} (Lap {fastest.get('lap_number')})")
 
-    # Save output
-    out_dir = os.path.join("telemetry", str(season), f"{round_num:02d}")
+    if not results["drivers"]:
+        print(f"⚠ No valid driver laps completed.")
+        return False
+
     os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "corners.json")
-
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
 
-    print(f"\n Saved {len(results['drivers'])} drivers to {out_path} ({os.path.getsize(out_path)} bytes)")
-    return out_path
+    print(f"💾 Saved: {out_path} ({os.path.getsize(out_path)} bytes)")
+    return True
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--season", type=str, default="2024")
-    parser.add_argument("--round", type=str, default="2")
+    parser.add_argument("--round", type=str, default="all")
+    parser.add_argument("--session", type=str, default="Race")
+    parser.add_argument("--force", action="store_true", help="Force overwrite existing files")
     args = parser.parse_args()
 
     s_year = int(args.season)
-    r_num = int(args.round) if args.round != "latest" else 1
-    extract_session_corners(s_year, r_num)
+    
+    print(f"📅 Fetching {s_year} Season Calendar...")
+    meetings = fetch_json(f"https://api.openf1.org/v1/meetings?year={s_year}")
+    if not meetings:
+        print("Failed to fetch calendar.")
+        return
+
+    gp_meetings = [m for m in meetings if "testing" not in m.get("meeting_name", "").lower()]
+    gp_meetings.sort(key=lambda x: x.get("date_start", ""))
+
+    print(f"Found {len(gp_meetings)} Grand Prix events in {s_year}.")
+
+    if args.round.lower() == "all":
+        rounds_to_process = list(range(1, len(gp_meetings) + 1))
+    else:
+        rounds_to_process = [int(args.round)]
+
+    successful = 0
+    for r in rounds_to_process:
+        if r <= len(gp_meetings):
+            meeting = gp_meetings[r - 1]
+            if extract_single_round(s_year, r, meeting, args.session, force=args.force):
+                successful += 1
+
+    print(f"\n🎉 Finished! Processed {successful}/{len(rounds_to_process)} rounds.")
+
+if __name__ == "__main__":
+    main()
