@@ -3,7 +3,7 @@ name: Automated Race Corner Telemetry Pipeline
 on:
   # 1. Runs every Sunday at 18:00 UTC automatically
   schedule:
-    - cron: '0 18 * * 0'
+    - cron: '0 * * * *'
 
   # 2. Can be triggered by backend via webhook
   repository_dispatch:
