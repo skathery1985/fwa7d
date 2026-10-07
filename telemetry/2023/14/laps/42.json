@@ -1,0 +1,1899 @@
+{
+  "season": 2023,
+  "round": 14,
+  "event_name": "Italian Grand Prix",
+  "lap": 42,
+  "total_corners": 11,
+  "drivers": {
+    "VER": {
+      "driver_number": 1,
+      "lap_time": 85.912,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11163,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 306,
+          "gear": 8,
+          "rpm": 10565,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 82,
+          "gear": 2,
+          "rpm": 6983,
+          "throttle": 32,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 284,
+          "gear": 7,
+          "rpm": 11323,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 288,
+          "gear": 8,
+          "rpm": 10056,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 207,
+          "gear": 5,
+          "rpm": 10909,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 219,
+          "gear": 6,
+          "rpm": 9622,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 298,
+          "gear": 8,
+          "rpm": 10658,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 180,
+          "gear": 5,
+          "rpm": 9240,
+          "throttle": 9,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 294,
+          "gear": 7,
+          "rpm": 10486,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 257,
+          "gear": 7,
+          "rpm": 10305,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "SAR": {
+      "driver_number": 2,
+      "lap_time": 87.176,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 312,
+          "gear": 8,
+          "rpm": 11504,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 326,
+          "gear": 8,
+          "rpm": 11932,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 71,
+          "gear": 2,
+          "rpm": 6595,
+          "throttle": 22,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 289,
+          "gear": 8,
+          "rpm": 10619,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 115,
+          "gear": 3,
+          "rpm": 8256,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 250,
+          "gear": 6,
+          "rpm": 11797,
+          "throttle": 91,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 149,
+          "gear": 5,
+          "rpm": 8164,
+          "throttle": 22,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 297,
+          "gear": 8,
+          "rpm": 11022,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 184,
+          "gear": 5,
+          "rpm": 10054,
+          "throttle": 88,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 300,
+          "gear": 8,
+          "rpm": 11155,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 209,
+          "gear": 6,
+          "rpm": 9369,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "NOR": {
+      "driver_number": 4,
+      "lap_time": 86.623,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11073,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 8
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 306,
+          "gear": 7,
+          "rpm": 11871,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 122,
+          "gear": 2,
+          "rpm": 10671,
+          "throttle": 69,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 304,
+          "gear": 8,
+          "rpm": 10730,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 135,
+          "gear": 3,
+          "rpm": 9257,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 206,
+          "gear": 5,
+          "rpm": 10462,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 158,
+          "gear": 4,
+          "rpm": 10093,
+          "throttle": 57,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 10973,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 14
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 181,
+          "gear": 4,
+          "rpm": 11385,
+          "throttle": 98,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 316,
+          "gear": 8,
+          "rpm": 11160,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 172,
+          "gear": 4,
+          "rpm": 10734,
+          "throttle": 59,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "GAS": {
+      "driver_number": 10,
+      "lap_time": 86.425,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 10767,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 10368,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 94,
+          "gear": 2,
+          "rpm": 9075,
+          "throttle": 67,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 300,
+          "gear": 7,
+          "rpm": 11515,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 115,
+          "gear": 3,
+          "rpm": 8022,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 179,
+          "gear": 5,
+          "rpm": 8868,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 167,
+          "gear": 5,
+          "rpm": 8645,
+          "throttle": 67,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 302,
+          "gear": 8,
+          "rpm": 10477,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 187,
+          "gear": 5,
+          "rpm": 9857,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 305,
+          "gear": 8,
+          "rpm": 10586,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 183,
+          "gear": 5,
+          "rpm": 9234,
+          "throttle": 53,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "PER": {
+      "driver_number": 11,
+      "lap_time": 86.539,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 318,
+          "gear": 8,
+          "rpm": 11269,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 8
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 351,
+          "gear": 8,
+          "rpm": 12047,
+          "throttle": 44,
+          "brake": 100,
+          "drs": 12
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 70,
+          "gear": 2,
+          "rpm": 6235,
+          "throttle": 16,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 279,
+          "gear": 7,
+          "rpm": 11064,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 268,
+          "gear": 8,
+          "rpm": 9276,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 218,
+          "gear": 5,
+          "rpm": 11225,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 200,
+          "gear": 6,
+          "rpm": 9940,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 299,
+          "gear": 7,
+          "rpm": 10644,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 217,
+          "gear": 6,
+          "rpm": 10396,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 289,
+          "gear": 7,
+          "rpm": 11441,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 240,
+          "gear": 7,
+          "rpm": 9436,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "ALO": {
+      "driver_number": 14,
+      "lap_time": 86.403,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11501,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 11297,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 114,
+          "gear": 2,
+          "rpm": 8991,
+          "throttle": 65,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 298,
+          "gear": 8,
+          "rpm": 11003,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 119,
+          "gear": 3,
+          "rpm": 8345,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 251,
+          "gear": 7,
+          "rpm": 9902,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 156,
+          "gear": 4,
+          "rpm": 10172,
+          "throttle": 60,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 306,
+          "gear": 8,
+          "rpm": 11308,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 199,
+          "gear": 6,
+          "rpm": 9526,
+          "throttle": 63,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 11483,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 183,
+          "gear": 5,
+          "rpm": 10201,
+          "throttle": 63,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "LEC": {
+      "driver_number": 16,
+      "lap_time": 86.448,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11264,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 8
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 334,
+          "gear": 8,
+          "rpm": 11855,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 73,
+          "gear": 2,
+          "rpm": 6850,
+          "throttle": 46,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 281,
+          "gear": 7,
+          "rpm": 11258,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 293,
+          "gear": 8,
+          "rpm": 10376,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 231,
+          "gear": 6,
+          "rpm": 10750,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 200,
+          "gear": 5,
+          "rpm": 9910,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 302,
+          "gear": 8,
+          "rpm": 10899,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 198,
+          "gear": 7,
+          "rpm": 10313,
+          "throttle": 1,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 286,
+          "gear": 7,
+          "rpm": 11561,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 206,
+          "gear": 5,
+          "rpm": 10652,
+          "throttle": 9,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "STR": {
+      "driver_number": 18,
+      "lap_time": 87.067,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 312,
+          "gear": 8,
+          "rpm": 11494,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 323,
+          "gear": 8,
+          "rpm": 11863,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 92,
+          "gear": 2,
+          "rpm": 8866,
+          "throttle": 49,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 303,
+          "gear": 8,
+          "rpm": 11163,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 131,
+          "gear": 3,
+          "rpm": 9108,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 206,
+          "gear": 6,
+          "rpm": 11002,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 151,
+          "gear": 4,
+          "rpm": 9710,
+          "throttle": 52,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 11397,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 168,
+          "gear": 5,
+          "rpm": 9352,
+          "throttle": 69,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 303,
+          "gear": 8,
+          "rpm": 11214,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 194,
+          "gear": 5,
+          "rpm": 10330,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "MAG": {
+      "driver_number": 20,
+      "lap_time": 86.278,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11179,
+          "throttle": 98,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 305,
+          "gear": 8,
+          "rpm": 10658,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 120,
+          "gear": 3,
+          "rpm": 9972,
+          "throttle": 68,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 11033,
+          "throttle": 98,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 111,
+          "gear": 3,
+          "rpm": 8023,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 210,
+          "gear": 6,
+          "rpm": 9993,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 159,
+          "gear": 5,
+          "rpm": 9029,
+          "throttle": 71,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 325,
+          "gear": 8,
+          "rpm": 11619,
+          "throttle": 98,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 192,
+          "gear": 5,
+          "rpm": 10509,
+          "throttle": 68,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 11050,
+          "throttle": 98,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 179,
+          "gear": 5,
+          "rpm": 9824,
+          "throttle": 65,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "ALB": {
+      "driver_number": 23,
+      "lap_time": 86.708,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11553,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11388,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 136,
+          "gear": 3,
+          "rpm": 10815,
+          "throttle": 71,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 304,
+          "gear": 8,
+          "rpm": 11206,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 121,
+          "gear": 3,
+          "rpm": 8686,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 193,
+          "gear": 5,
+          "rpm": 10177,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 158,
+          "gear": 5,
+          "rpm": 8939,
+          "throttle": 48,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 307,
+          "gear": 8,
+          "rpm": 11291,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 177,
+          "gear": 5,
+          "rpm": 9761,
+          "throttle": 74,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11518,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 175,
+          "gear": 5,
+          "rpm": 9586,
+          "throttle": 39,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "ZHO": {
+      "driver_number": 24,
+      "lap_time": 86.671,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11209,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 301,
+          "gear": 8,
+          "rpm": 10672,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 111,
+          "gear": 3,
+          "rpm": 8802,
+          "throttle": 67,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 300,
+          "gear": 8,
+          "rpm": 10747,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 103,
+          "gear": 3,
+          "rpm": 7739,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 186,
+          "gear": 5,
+          "rpm": 9645,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 173,
+          "gear": 5,
+          "rpm": 9422,
+          "throttle": 79,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 11013,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 175,
+          "gear": 5,
+          "rpm": 9432,
+          "throttle": 73,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 301,
+          "gear": 8,
+          "rpm": 10724,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 181,
+          "gear": 5,
+          "rpm": 9697,
+          "throttle": 50,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "HUL": {
+      "driver_number": 27,
+      "lap_time": 86.102,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 11061,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11134,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 126,
+          "gear": 2,
+          "rpm": 10100,
+          "throttle": 73,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 297,
+          "gear": 8,
+          "rpm": 10550,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 105,
+          "gear": 4,
+          "rpm": 6554,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 218,
+          "gear": 6,
+          "rpm": 10001,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 164,
+          "gear": 5,
+          "rpm": 8945,
+          "throttle": 57,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 306,
+          "gear": 8,
+          "rpm": 10927,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 191,
+          "gear": 5,
+          "rpm": 10506,
+          "throttle": 77,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 305,
+          "gear": 8,
+          "rpm": 10899,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 203,
+          "gear": 6,
+          "rpm": 9648,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "LAW": {
+      "driver_number": 40,
+      "lap_time": 86.121,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 310,
+          "gear": 8,
+          "rpm": 11031,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 303,
+          "gear": 8,
+          "rpm": 10650,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 153,
+          "gear": 3,
+          "rpm": 11820,
+          "throttle": 89,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 301,
+          "gear": 8,
+          "rpm": 10703,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 96,
+          "gear": 3,
+          "rpm": 7409,
+          "throttle": 36,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 174,
+          "gear": 5,
+          "rpm": 8640,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 214,
+          "gear": 5,
+          "rpm": 11089,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 312,
+          "gear": 8,
+          "rpm": 11061,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 203,
+          "gear": 5,
+          "rpm": 10693,
+          "throttle": 87,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 311,
+          "gear": 8,
+          "rpm": 11128,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 194,
+          "gear": 5,
+          "rpm": 10299,
+          "throttle": 90,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "HAM": {
+      "driver_number": 44,
+      "lap_time": 86.216,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11551,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 274,
+          "gear": 8,
+          "rpm": 9671,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 130,
+          "gear": 3,
+          "rpm": 10045,
+          "throttle": 77,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 304,
+          "gear": 8,
+          "rpm": 11110,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 127,
+          "gear": 4,
+          "rpm": 7661,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 190,
+          "gear": 5,
+          "rpm": 9806,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 186,
+          "gear": 5,
+          "rpm": 10917,
+          "throttle": 94,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 309,
+          "gear": 8,
+          "rpm": 11350,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 200,
+          "gear": 6,
+          "rpm": 9642,
+          "throttle": 81,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11619,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 195,
+          "gear": 6,
+          "rpm": 9615,
+          "throttle": 83,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "SAI": {
+      "driver_number": 55,
+      "lap_time": 86.479,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11276,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 335,
+          "gear": 8,
+          "rpm": 11896,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 73,
+          "gear": 2,
+          "rpm": 6963,
+          "throttle": 40,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 278,
+          "gear": 7,
+          "rpm": 11197,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 303,
+          "gear": 8,
+          "rpm": 10891,
+          "throttle": 10,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 230,
+          "gear": 6,
+          "rpm": 10656,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 183,
+          "gear": 6,
+          "rpm": 8616,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 295,
+          "gear": 8,
+          "rpm": 10553,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 218,
+          "gear": 8,
+          "rpm": 8738,
+          "throttle": 1,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 292,
+          "gear": 7,
+          "rpm": 11790,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 222,
+          "gear": 8,
+          "rpm": 9290,
+          "throttle": 3,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "RUS": {
+      "driver_number": 63,
+      "lap_time": 86.335,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11510,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 320,
+          "gear": 8,
+          "rpm": 11711,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 76,
+          "gear": 3,
+          "rpm": 6214,
+          "throttle": 44,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 296,
+          "gear": 8,
+          "rpm": 10923,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 121,
+          "gear": 3,
+          "rpm": 8536,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 191,
+          "gear": 5,
+          "rpm": 10040,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 156,
+          "gear": 4,
+          "rpm": 9808,
+          "throttle": 41,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 301,
+          "gear": 8,
+          "rpm": 11174,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 184,
+          "gear": 5,
+          "rpm": 10006,
+          "throttle": 87,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 311,
+          "gear": 8,
+          "rpm": 11454,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 185,
+          "gear": 5,
+          "rpm": 9729,
+          "throttle": 25,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    },
+    "BOT": {
+      "driver_number": 77,
+      "lap_time": 86.864,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 313,
+          "gear": 8,
+          "rpm": 11210,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 8
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 330,
+          "gear": 8,
+          "rpm": 11662,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 91,
+          "gear": 2,
+          "rpm": 8044,
+          "throttle": 51,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 298,
+          "gear": 8,
+          "rpm": 10699,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 108,
+          "gear": 3,
+          "rpm": 7791,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 240,
+          "gear": 6,
+          "rpm": 10304,
+          "throttle": 43,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 151,
+          "gear": 5,
+          "rpm": 8399,
+          "throttle": 52,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 315,
+          "gear": 8,
+          "rpm": 11235,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 12
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 187,
+          "gear": 5,
+          "rpm": 10068,
+          "throttle": 78,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 305,
+          "gear": 8,
+          "rpm": 10913,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 193,
+          "gear": 6,
+          "rpm": 9879,
+          "throttle": 3,
+          "brake": 100,
+          "drs": 0
+        }
+      ]
+    },
+    "PIA": {
+      "driver_number": 81,
+      "lap_time": 113.593,
+      "corners": [
+        {
+          "turn": 1,
+          "apex_speed_kmh": 80,
+          "gear": 2,
+          "rpm": 7086,
+          "throttle": 47,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 2,
+          "apex_speed_kmh": 0,
+          "gear": 1,
+          "rpm": 3981,
+          "throttle": 0,
+          "brake": 100,
+          "drs": 0
+        },
+        {
+          "turn": 3,
+          "apex_speed_kmh": 79,
+          "gear": 2,
+          "rpm": 6799,
+          "throttle": 64,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 4,
+          "apex_speed_kmh": 169,
+          "gear": 4,
+          "rpm": 10243,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 5,
+          "apex_speed_kmh": 73,
+          "gear": 2,
+          "rpm": 6320,
+          "throttle": 0,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 6,
+          "apex_speed_kmh": 288,
+          "gear": 7,
+          "rpm": 11552,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 7,
+          "apex_speed_kmh": 119,
+          "gear": 3,
+          "rpm": 8911,
+          "throttle": 47,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 8,
+          "apex_speed_kmh": 238,
+          "gear": 6,
+          "rpm": 10870,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 9,
+          "apex_speed_kmh": 300,
+          "gear": 8,
+          "rpm": 10561,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 10,
+          "apex_speed_kmh": 219,
+          "gear": 5,
+          "rpm": 10717,
+          "throttle": 99,
+          "brake": 0,
+          "drs": 0
+        },
+        {
+          "turn": 11,
+          "apex_speed_kmh": 314,
+          "gear": 8,
+          "rpm": 11060,
+          "throttle": 100,
+          "brake": 0,
+          "drs": 0
+        }
+      ]
+    }
+  }
+}
